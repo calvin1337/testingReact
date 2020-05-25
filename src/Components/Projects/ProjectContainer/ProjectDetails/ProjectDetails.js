@@ -6,6 +6,7 @@ import "./projectDetails.css"
 import Accordion from '../../ProjectAccordion/Accordion';
 
 import image from "../../../../images/ProjectImages/cablecutter.jpg"
+import ProjectContent from './ProjectContent';
 
 export class ProjectDetails extends Component {
 
@@ -43,7 +44,7 @@ export class ProjectDetails extends Component {
                     <div className="project-info">
                         <h2>Details:</h2>
                         <ul>
-                        <li><span>Project Name:</span> Example 1</li>
+                        <li><span>Name:</span> {this.state.testing.name}</li>
                         <li><span>Client:</span>John Doe</li>
                         <li><span>Data:</span>23/05/2020</li>
                         <li><span>Category:</span>Welding</li>
@@ -55,10 +56,20 @@ export class ProjectDetails extends Component {
                      </div>
                     </Col>
                 </Row>
-              </Container>
+                <Row style={{marginTop:"50px"}}>
+                    <Col md="12" >
+                    <ProjectContent />
+                    </Col>
+                    <div class="clearfix"></div>
+                    <Col xs="12">
+                     <Accordion />
+                    </Col>
+                </Row>
                 
+            
+            
+            </Container>
             </div>
-            <Accordion />
             </React.Fragment>
         )
     }

@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import {Row, Container} from "react-bootstrap"
 import SingleProject from './SingleProject'
 import Selector from '../Selector/Selector'
-import ProjectDetails from './ProjectDetails/ProjectDetails';
 import { withRouter } from 'react-router'
-import { Route } from 'react-router-dom';
 
 
 import cablecutter from "../../../images/ProjectImages/cablecutter.jpg";
