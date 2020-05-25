@@ -4,6 +4,39 @@ import "./accordion.css";
 
 export class ProjectAccordion extends Component {
 
+    toggleOne = () => {
+        let btn = document.getElementById("toggleBtnOne")
+        let toggle = document.getElementById("toggleOne")
+        
+        if(toggle.classList.contains("show")){
+            btn.classList.add("collapsed")
+            
+        }
+        else if(!toggle.classList.contains("show")) {
+            
+            btn.classList.remove("collapsed")
+            
+        }
+    }
+    
+    toggleTwo = () => {
+        let btn = document.getElementById("toggleBtnTwo")
+        let toggle = document.getElementById("toggleTwo")
+        
+        if(toggle.classList.contains("show")){
+            btn.classList.add("collapsed")
+            
+        }
+        else if(!toggle.classList.contains("show")) {
+            
+            btn.classList.remove("collapsed")
+            
+        }
+    }
+
+    componentDidMount() {
+        
+    }
     render() {
        
         
@@ -14,7 +47,7 @@ export class ProjectAccordion extends Component {
                 <Accordion className="panel-group" defaultActiveKey="0">
                         <div className="panel"> 
                         <Accordion.Toggle className="panel-heading" as={Card.Header} eventKey="0">
-                        <a >The Challange Was</a>
+                        <a onClick={this.toggleOne} id="toggleBtnOne">The Challange Was</a>
                         </Accordion.Toggle>
                         <Accordion.Collapse id="toggleOne" eventKey="0">
                         <div className="panel-body">
@@ -22,11 +55,14 @@ export class ProjectAccordion extends Component {
                         </div>
                         </Accordion.Collapse>
                         </div>
+                        </Accordion>  
+                        </div>
                         <div className="challange-solution-section">  
+                        <Accordion className="panel-group" >  
                         <div className="panel">
-                                               
+                                         
                         <Accordion.Toggle className="panel-heading" as={Card.Header} eventKey="1">
-                        <a >Our Solutions Was</a>
+                        <a onClick={this.toggleTwo} class="collapsed" id="toggleBtnTwo" >Our Solutions Was</a>
                         </Accordion.Toggle>
                         <Accordion.Collapse id="toggleTwo"  eventKey="1">
                         <div className="panel-body">
@@ -34,7 +70,6 @@ export class ProjectAccordion extends Component {
                         </div>
                         </Accordion.Collapse>
                         </div>   
-                        </div>
                     </Accordion>
                 </div>
             </Container>

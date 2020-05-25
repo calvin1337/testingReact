@@ -8,7 +8,7 @@
 
 .panel {
     padding: 35px 25px;
-    border: 2px solid #f2f7fd;
+    border: 3px solid #e9f2fb;
 }
 
  .panel-heading {
@@ -48,7 +48,7 @@ transition:all .2s;
 
 .panel-heading a:hover{
 cursor: pointer;
-color: #ff5e14;
+
 }
 
 .panel-heading .collapsed {
@@ -61,11 +61,15 @@ color: #ff5e14;
     font-size: 18px;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #ff5e14;
+    color: #222222;
     display: block;
     padding: 0 0 0 45px;
     position: relative;
    text-decoration: none;
+}
+
+.card-header{
+    border:none !important;
 }
 
 .theme-accordion-s1 .panel-heading .collapsed:before, .theme-accordion-s2 .panel-heading .collapsed:before {
