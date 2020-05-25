@@ -3,6 +3,7 @@ import data from "../../projects.json";
 import {Container, Row, Col} from "react-bootstrap";
 import Header from '../../../Header/Header';
 import "./projectDetails.css"
+import Accordion from '../../ProjectAccordion/Accordion';
 
 export class ProjectDetails extends Component {
 
@@ -12,7 +13,12 @@ export class ProjectDetails extends Component {
     }
 
     componentDidMount() {
+        
+        const length = data.projects.length - 1
         const postId = this.props.match.params.id
+        if(postId > length){
+            this.props.history.push("/projects");
+        } else
         this.setState({id: postId, testing: data.projects[postId]})
       }
 
@@ -50,6 +56,7 @@ export class ProjectDetails extends Component {
               </Container>
                 
             </div>
+            <Accordion />
             </React.Fragment>
         )
     }

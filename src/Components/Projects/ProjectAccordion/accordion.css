@@ -1,0 +1,86 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+.challange-solution-section {
+    margin-top: 70px;
+    clear: both;
+    float: none;
+}
+
+.panel {
+    padding: 35px 25px;
+    border: 2px solid #f2f7fd;
+}
+
+ .panel-heading {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.panel-heading a.collapsed:before
+
+{
+    content: '\f067';
+     font-weight: 900;
+}
+
+a{
+transition:all .2s;
+}
+.panel-heading a:before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f068';
+    font-weight: 900;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #222;
+    font-size: 15px;
+    font-size: 1rem;
+    border: 1px solid #222;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -4px;
+
+}
+
+.panel-heading a:hover{
+cursor: pointer;
+color: #ff5e14;
+}
+
+.panel-heading .collapsed {
+    background-color: transparent;
+    color: #151222;
+}
+
+.panel-heading a {
+    font-family: barlow condensed,sans-serif;
+    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ff5e14;
+    display: block;
+    padding: 0 0 0 45px;
+    position: relative;
+   text-decoration: none;
+}
+
+.theme-accordion-s1 .panel-heading .collapsed:before, .theme-accordion-s2 .panel-heading .collapsed:before {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.panel-body {
+    background-color: transparent;
+    border: 0;
+    padding: 20px 0 0 45px;
+}
+
+p {
+    color: #687187;
+    line-height: 1.7em;
+}
