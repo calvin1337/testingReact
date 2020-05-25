@@ -1,0 +1,120 @@
+.servicesContent .servicesTitle h2{
+    font: 600 44px 'Montserrat', sans-serif;
+    color: #242424;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    letter-spacing: 0.3px;
+    margin: 0;
+}
+.servicesContent h2{
+opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+}
+
+.servicesContent .servicesTitle h2:before {
+    content: "";
+    width: 55px;
+    height: 3px;
+    display: inline-block;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+}
+
+.servicesContent .servicesTitle  {
+    position: relative;
+    padding: 0 0 50px;
+}
+
+.singleServiceImage {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.servicesContent p{
+    color: #898989;
+    margin: 0 0 1.2em!important;
+    padding: 0;
+    font: 400 1em/1.8em "Open Sans", sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 16pt;
+}
+
+.pBold {
+    color:#222 !important;
+    font-weight:500 !important;
+    font-size:17pt !important;
+   }
+
+
+.list-style-one {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.list-style-one li {
+    position: relative;
+    list-style: outside none!important;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5b5b5b;
+    font-weight: 700;
+    padding-left: 25px;
+    margin-bottom: 11px;
+}
+
+.list-style-one li:before {
+    content: "\f138";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    font-size: 14px;
+    line-height: 1.6em;
+    padding: 0;
+    color: #5b5b5b;
+    font-weight: 900;
+    font-family: "font awesome 5 free";
+}
+
+.servicesSubTitle h3 {
+    position: relative;
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-bottom: 22px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.servicesSubTitle h3:before {
+    content: "";
+    width: 55px;
+    height: 3px;
+    display: inline-block;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+  font: sans-serif;
+    
+}
+.servicesSubTitle{
+    padding: 0 0 20px;
+}
+.subServicesImage{
+    display:flex;
+  }
+  .subServicesImage img{
+    width:50%;
+    height:250px;
+    margin:5px;
+  }
+  
+  .servicesBtn{
+    margin-top:20px;
+   
+  }

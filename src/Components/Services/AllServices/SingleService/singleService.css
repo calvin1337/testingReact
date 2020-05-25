@@ -1,0 +1,21 @@
+.singleService img{
+height:164px;
+width:265px;
+}
+
+.ServiceTitleOne {
+    font-size:18px;
+    color:#222;
+    font-weight:700;
+    line-height:1.4;
+    margin:20px 0;
+    height:30px;
+}
+
+.singleService {
+    font-size: 16px;
+    color:#677078;
+    line-height: 1.688;
+    margin-bottom: 20px;
+}
+

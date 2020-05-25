@@ -1,0 +1,66 @@
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../../../images/HomepageLanding/weldinghp2.jpeg) top center;
+    background-size: cover;
+    position: relative;
+    font-family: 'IBM Plex Mono', monospace;
+    box-shadow: 0 0 30px #333;
+    }
+    
+    #hero:before {
+    content: "";
+    background: rgba(33,37,41, 0.75);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    }
+
+    #hero .hero-container {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        }
+
+
+.hero-container ul{
+	
+	list-style: none;
+	margin:10px;
+}
+
+.hero-container ul li {
+    margin: 0 0 24px;
+}
+
+.hero-container h1{
+    font-size:75px;
+    color:white;
+    margin:40px;
+}
+
+.hero-container h3{
+    margin:20px;
+}

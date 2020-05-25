@@ -1,0 +1,9 @@
+.FacilitesImg img{
+    box-shadow: 0 0 50px 0 #999999;
+    height:400px;
+    width: 100%;
+}
+.facilities{
+    font-size: 16pt
+}
+
