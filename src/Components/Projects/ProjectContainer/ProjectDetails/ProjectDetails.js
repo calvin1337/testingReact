@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import data from "../../projects.json";
+import projectData from "../../ProjectData";
 import {Container, Row, Col} from "react-bootstrap";
 import Header from '../../../Header/Header';
 import "./projectDetails.css"
 import Accordion from '../../ProjectAccordion/Accordion';
+
+import image from "../../../../images/ProjectImages/cablecutter.jpg"
 
 export class ProjectDetails extends Component {
 
@@ -13,13 +15,13 @@ export class ProjectDetails extends Component {
     }
 
     componentDidMount() {
-        
-        const length = data.projects.length - 1
+        console.log(projectData)
+        const length = projectData.length - 1
         const postId = this.props.match.params.id
         if(postId > length){
             this.props.history.push("/projects");
         } else
-        this.setState({id: postId, testing: data.projects[postId]})
+        this.setState({id: postId, testing: projectData[postId]})
       }
 
     render() {
@@ -34,7 +36,7 @@ export class ProjectDetails extends Component {
                 <Row>
                     <Col md="8">
                         <div className="projectImageContainer">
-                        <img src="https://i.picsum.photos/id/66/200/300.jpg" alt="" />
+                        <img src={this.state.testing.image} alt="" />
                         </div>
                     </Col>
                     <Col md="4">
