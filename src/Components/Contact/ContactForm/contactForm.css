@@ -1,0 +1,118 @@
+.contactTitle {
+    font: 500 44px "Montserrat",sans-serif;
+    color: #242424;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: .3px;
+    margin: 0;
+    padding-bottom:20px;
+}
+
+.contactTitle:before {
+    content: "";
+    width: 55px;
+    height: 3px;
+    display: inline-block;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.contactInfo p {
+    color: #898989;
+    margin: 0 0 1.2em!important;
+    
+    font: 400 1em/1.8em "Open Sans",sans-serif;
+    letter-spacing: .3px;
+    /* font-size: 16pt; */
+}
+
+.contactTitleContainer{
+    position: relative;
+    padding: 0 0 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 70px;
+    background: #f4f4f5;
+    border-radius: 0px;
+    border: 0;
+    padding-left: 30px;
+    color: #838999;
+    font-weight: 300;
+    letter-spacing: .6px;
+}
+
+.inputBox {
+    margin-top: 10px;
+    margin-right: -20px;
+}
+
+.inputBox textarea {
+    width: 100%;
+    height: 170px;
+    background: #f4f4f5;
+    border-radius: 0px;
+    border: 0;
+    padding-left: 30px;
+    padding-top: 13px;
+    color: #838999;
+    resize: none;
+    font-weight: 300;
+    letter-spacing: .6px;
+}
+
+.SubmitBtn {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 32px;
+    font-size: 16px;
+    width:100%;
+    line-height: 60px;
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    background-color: #222;
+    letter-spacing: 1px;
+    position: relative;
+  border:none;
+}
+
+
+
+
+
+
+.SubmitBtn:before {
+    position: absolute;
+    content: '';
+    transform: translateY(-50%);
+    background: #222;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+}
+
+.SubmitBtn:hover {
+    background:	#f4f4f5 ;
+    color: #222;
+    border: 2px solid #e7e7e7;
+    
+}
+
+.contactImgContainer img{
+   
+    vertical-align: middle;
+    border-style: none;
+    height:150px;
+}
