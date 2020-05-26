@@ -1,0 +1,91 @@
+.SingleContactCard {
+    text-align: center;
+    padding: 40px 0;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.SingleContactCard:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #222;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    z-index: -1;
+}
+
+
+
+.SingleContactCard:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #222;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    z-index: -1;
+}
+.partText span {
+    display: block;
+}
+.partIcon {
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size:50px;
+}
+
+
+
+.SingleContactCard .partText span.title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #222222;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 7px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.SingleContactCard .partText span.info {
+    color: #999999;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.SingleContactCard:hover .partText span.info {
+    color: #fff;
+}
+ .SingleContactCard:hover .partText span.title {
+    color: #fff;
+}
+
+.SingleContactCard:hover .partIcon{
+  color:white;
+}
+
+.SingleContactCard:hover:before,
+.SingleContactCard:hover:after{
+    width: 50%;
+}

@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { Container } from "react-bootstrap";
+import ContactCard from '../../Components/Contact/ContactCard/ContactCard';
+
 export class Contact extends Component {
     render() {
         return (
-            <div>
-                <Container>
-
+            <div style={{paddingTop: "50px", paddingBottom:"50px"}}>
+                <Container style={{paddingTop: "50px"}}>
+                    <ContactCard />
                 </Container>
             </div>
         )

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {Row, Col} from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faPhone} from "@fortawesome/free-solid-svg-icons";
-
+import {faPhone, faMailBulk, faMapMarkedAlt} from "@fortawesome/free-solid-svg-icons";
+import "./contactCard.css"
 
 export class ContactCard extends Component {
     render() {
@@ -25,7 +25,7 @@ export class ContactCard extends Component {
                             <Col xl="4" lg="4" md="6">
                                 <div className="SingleContactCard">
                                     <div className="partIcon">
-                                        <FontAwesomeIcon icon={faPhone} />
+                                        <FontAwesomeIcon icon={faMailBulk} />
                                     </div>
                                     <div className="partText">
                                          <span class="title">Message Us Now:</span>
@@ -36,7 +36,7 @@ export class ContactCard extends Component {
                             <Col xl="4" lg="4" md="6">
                                 <div className="SingleContactCard">
                                     <div className="partIcon">
-                                        <FontAwesomeIcon icon={faPhone} />
+                                        <FontAwesomeIcon icon={faMapMarkedAlt} />
                                     </div>
                                     <div className="partText">
                                          <span class="title">Address:</span>

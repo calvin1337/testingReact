@@ -84,7 +84,7 @@ cursor: pointer;
     padding: 20px 0 0 45px;
 }
 
-p {
+.panel-body p {
     color: #687187;
     line-height: 1.7em;
 }

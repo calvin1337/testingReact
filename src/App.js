@@ -14,7 +14,7 @@ import About from './Containers/About/About';
 import ScrollToTop from './Components/ScrollTop';
 import Projects from './Containers/Projects/Projects';
 import ProjectDetails from './Components/Projects/ProjectContainer/ProjectDetails/ProjectDetails';
-import Contact from "./Components/Contact/Contact"
+import Contact from './Containers/Contact/Contact';
 
 
 export class App extends Component {
