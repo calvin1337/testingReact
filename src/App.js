@@ -14,7 +14,7 @@ import About from './Containers/About/About';
 import ScrollToTop from './Components/ScrollTop';
 import Projects from './Containers/Projects/Projects';
 import ProjectDetails from './Components/Projects/ProjectContainer/ProjectDetails/ProjectDetails';
-
+import Contact from "./Components/Contact/Contact"
 
 
 export class App extends Component {
@@ -55,8 +55,17 @@ export class App extends Component {
         
       )} />
       <Route path="/projects/:id" component={ProjectDetails} />
+
+      <Route path="/contact" exact render={props => (
+        
+          <Contact />
+          
+       
+        
+      )} />
       
       </Router>
+
       <Footer />
     </div>
     )
