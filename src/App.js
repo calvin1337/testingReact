@@ -15,6 +15,7 @@ import ScrollToTop from './Components/ScrollTop';
 import Projects from './Containers/Projects/Projects';
 import ProjectDetails from './Components/Projects/ProjectContainer/ProjectDetails/ProjectDetails';
 import Contact from './Containers/Contact/Contact';
+import errorPage from './Containers/404Page/errorPage';
 
 
 export class App extends Component {
@@ -63,7 +64,8 @@ export class App extends Component {
        
         
       )} />
-      
+            <Route path="/error" component={errorPage} />
+
       </Router>
 
       <Footer />

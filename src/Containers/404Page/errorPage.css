@@ -1,0 +1,45 @@
+.page-error-404 {
+    color: #eee;
+    display: block;
+    font-size: 300px;
+    font-weight: 800;
+    line-height: .7;
+}
+
+.errorPage h3{
+    font-size: 50px!important;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+
+}
+
+
+.lead {
+    font-weight: 400;
+    font-size:1.25rem;
+  font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.7;
+    letter-spacing: 0;
+    color: #777;
+    font-family: poppins,sans-serif;
+
+}
+
+.itemBtn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    display: inline-block;
+    padding: 12px 27px;
+    background-color: #222;
+    border-radius: 4px;
+}
+
+
+.text-center a:hover{
+    text-decoration: none;
+    color:white
+}
