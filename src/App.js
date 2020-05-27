@@ -4,7 +4,7 @@ import Homepage from "./Containers/Homepage/Homepage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BrowserRouter as Router , Route} from 'react-router-dom'
+import { BrowserRouter as Router , Route, Switch} from 'react-router-dom'
 
 
 import Nav from "./Components/Nav/Nav"
@@ -26,22 +26,24 @@ export class App extends Component {
     return (
       <div className="App">
       <Router >
+       
         <ScrollToTop />
       <Nav />
-      <Route Route path="/" exact render={props => (
+      <Switch>
+      <Route path="/" exact render={props => (
         
           <Homepage />
           
         
       )} />
 
-      <Route path="/about" render={props => (
+      <Route path="/about" exact render={props => (
         
         <About />
         
       
     )} />
-      <Route path="/services" render={props => (
+      <Route path="/services" exact render={props => (
         <div>
           <ServicesContainer />
           
@@ -55,7 +57,7 @@ export class App extends Component {
         </div>
         
       )} />
-      <Route path="/projects/:id" component={ProjectDetails} />
+      <Route path="/projects/:id" exact component={ProjectDetails} />
 
       <Route path="/contact" exact render={props => (
         
@@ -64,8 +66,8 @@ export class App extends Component {
        
         
       )} />
-            <Route path="/error" component={errorPage} />
-
+            <Route component={errorPage} />
+            </Switch>
       </Router>
 
       <Footer />
