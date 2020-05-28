@@ -40,3 +40,21 @@
     line-height: 1;
     padding-left: 35px;
 }
+
+
+
+
+.singleJobDesc p{
+    font-size: 16px;
+    color: #677078;
+    line-height: 1.688;
+    margin-bottom: 20px;
+}
+
+.singleJobDesc h2 {
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 0;
+}
