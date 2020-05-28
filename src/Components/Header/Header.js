@@ -13,7 +13,7 @@ export class Header extends Component {
             }
         }
 
-        if(this.props.headerTitle === "Our Services"){
+        if(this.props.headerTitle === "Our Services" || this.props.careers){
             headerImage = {
                 backgroundImage: `url("https://testatrading.org/wp-content/uploads/2017/12/Slider1.jpg")`
             }

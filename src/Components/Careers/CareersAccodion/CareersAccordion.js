@@ -14,12 +14,12 @@ export class CareersAccordion extends Component {
        
 
         return (
-       <div>
+       <div className="careersAccordion">
            <Accordion>
 
            <div class="list-group-item">
       <Accordion.Toggle  as={Card.Header} eventKey="0">
-      <a  onClick={this.testFunc} class="btn btn-link collapsed">WHAT IS THE WORKING HOURS </a>
+      <a  onClick={this.testFunc} >WHAT IS THE WORKING HOURS </a>
 
       </Accordion.Toggle>
       </div>
@@ -33,7 +33,7 @@ export class CareersAccordion extends Component {
 
            <div class="list-group-item">
       <Accordion.Toggle  as={Card.Header} eventKey="0">
-      <a  onClick={this.testFunc} class="btn btn-link collapsed">WHAT ARE THE GROWING OPPORTUNITIES </a>
+      <a  onClick={this.testFunc}> WHAT ARE THE GROWING OPPORTUNITIES </a>
 
       </Accordion.Toggle>
       </div>
@@ -47,7 +47,7 @@ export class CareersAccordion extends Component {
 
            <div class="list-group-item">
       <Accordion.Toggle  as={Card.Header} eventKey="0">
-      <a  onClick={this.testFunc} class="btn btn-link collapsed">Candidates must have</a>
+      <a  onClick={this.testFunc} >Candidates must have</a>
 
       </Accordion.Toggle>
       </div>
@@ -55,7 +55,7 @@ export class CareersAccordion extends Component {
       <Card.Body id="toggleOne"> 
       <div class="panel-one">
         <p>Candidates must have qualifications and experience relevant to the job applying for. We also expect all Candidates to have</p>
-        <ul>
+        <ul className="list-style-one">
           <li>Ability to understand and follow instruction</li>
           <li>Good communication skills</li>
           <li>Ability to work to time schedules</li>
@@ -70,7 +70,7 @@ export class CareersAccordion extends Component {
 
            <div class="list-group-item">
       <Accordion.Toggle  as={Card.Header} eventKey="0">
-      <a  onClick={this.testFunc} class="btn btn-link collapsed">Our Location</a>
+      <a  onClick={this.testFunc} >Our Location</a>
 
       </Accordion.Toggle>
       </div>
