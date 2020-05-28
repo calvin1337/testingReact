@@ -17,6 +17,7 @@ import ProjectDetails from './Components/Projects/ProjectContainer/ProjectDetail
 import Contact from './Containers/Contact/Contact';
 import errorPage from './Containers/404Page/errorPage';
 import Careers from './Containers/Careers/Careers';
+import CareerDetails from './Components/Careers/CareerDetails/CareerDetails';
 
 
 export class App extends Component {
@@ -74,6 +75,10 @@ export class App extends Component {
         
       
     )} />
+
+
+      <Route path="/careers/:id" exact component={CareerDetails} />
+
             <Route component={errorPage} />
             </Switch>
       </Router>

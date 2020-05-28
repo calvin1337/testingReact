@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Col, Row} from "react-bootstrap";
+
 import "./careerSingle.css"
 export class CareerSingle extends Component {
     render() {
@@ -19,7 +20,7 @@ export class CareerSingle extends Component {
                         {this.props.jobDesc}</p> 
                     </Col>
                     <Col sm="12" md="12" lg="3">
-                        <a href="#" class="btn btn__primary btn__bordered">More Info</a>
+                        <button onClick={() => this.props.postSelectedHandler(this.props.id)}  class="btn btn__primary btn__bordered">More Info</button>
                     </Col>
                 </Row>
             </div>
