@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap');
+
+
+
+
+.list-group-item a {
+    font-weight: 800;
+    color: #2d2d2d;
+    z-index: 2;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  font-family: 'Rajdhani', sans-serif;
+   padding: 10px 15px ;
+    display: block;
+    font-size:15px !important;
+    text-align:left;
+    padding-left:60px;
+}
+
+.list-group-item a:before {
+    
+    transform: rotate(135deg);
+    left: 9px;
+    top: 18px;
+    position: absolute;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    content: "";
+    width: 6px;
+    height: 6px;
+    transition: all .15s;
+    border-color: #FFF;
+    z-index: 5;
+}
+
+ .list-group-item a:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #272727;
+    position: absolute;
+    top: 10px;
+    left: 0;
+   background:#F5BF23 !important
+}
+
+
+.list-group-item a.collapsed:before {
+    transform: rotate(45deg);
+      left: 8px;
+    top: 20px;
+}
+
+
+.list-group-item:before {
+    content: "";
+    width: 21px;
+    height: 1px;
+background-color: #F5BF23 !important ;   
+  top: 22px;
+    left: 25px;
+    position: absolute;
+    transition: width .6s;
+  
+}
+
+.list-group-item {
+    border: none !important;
+}
+
+.list-group-item {
+    padding: 0;
+    border: none;
+    border-top: 1px solid #DADADA;
+    border-radius: 0;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.list-group-item:hover:before {
+    width: 10px;
+}
+
+.panel-one  {
+  padding: 0px 15px 10px 0;
+  margin:5px 0;
+}
+
+.list-group-item .card-header{
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    background-color:transparent !important;
+    border-bottom: none !important;
+}
