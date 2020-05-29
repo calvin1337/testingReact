@@ -45,7 +45,7 @@
 
 
 .singleJobDesc p{
-    font-size: 16px;
+    font-size: 18px;
     color: #677078;
     line-height: 1.688;
     margin-bottom: 20px;
@@ -57,4 +57,40 @@
     line-height: 1;
     font-weight: 700;
     margin: 0;
+}
+
+
+.list-style-two {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.list-style-two li {
+    position: relative;
+    list-style: outside none!important;
+    font-size: 18px;
+    line-height: 24px;
+    color: #5b5b5b;
+    font-weight: 700;
+      padding: 15px 0;
+    padding-left: 40px;
+    margin-bottom: 11px;
+    width:100%;
+    border-bottom: 2px solid #f4f5f8;
+}
+
+.list-style-two li:before {
+    content: "\f192";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    display: block;
+    font-size: 16px;
+    line-height: 1.6em;
+    padding: 0;
+ 
+    color: #8d8d8d;
+    font-weight: 900;
+    font-family: "font awesome 5 free";
+
 }

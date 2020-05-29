@@ -15,6 +15,7 @@ export class Projects extends Component {
             <div>
                 <Header 
                 headerTitle="Our Projects"
+                careers="true"
                 />
 
                 <ProjectContainer/>

@@ -13,9 +13,7 @@ export class CareerDetails extends Component {
 
     componentDidMount() {
         const postId = this.props.match.params.id
-        console.log(postId)
-        console.log(Jobs)
-
+        
         for(let i = 0; i < Jobs.length; i++){
             if(postId === Jobs[i].id){
                 this.setState({currentJob: Jobs[i]})
@@ -23,19 +21,51 @@ export class CareerDetails extends Component {
         }
     }
     render() {
-        let essential = ""
+        let essentialExp = ""
+        let essentialDisplay = {
+            display:"block"
+        }
+        let essentialSkill = ""
+        let ideallyDisplay = {
+            display:"block"
+        }
+
         if(this.state.currentJob.essentialExperience !== undefined){
-            essential = this.state.currentJob.essentialExperience.map(skill => {
+            essentialExp = this.state.currentJob.essentialExperience.map(skill => {
                return  <li>{skill}</li>
             }
             
                 )
+        } 
+
+        if(this.state.currentJob.essentialSkills !== undefined){
+            essentialSkill = this.state.currentJob.essentialSkills.map(skill => {
+               return  <li>{skill}</li>
+            }
+            
+                )
+        } 
+
+        if(essentialSkill.length === 0){
+            ideallyDisplay = {
+                display:"none"
+            }
+        } 
+
+        if(essentialExp.length === 0){
+            essentialDisplay = {
+                display:"none"
+            }
         }
+
+       
+
         
         return (
             <React.Fragment>
                 <Header 
             headerTitle={this.state.currentJob.title}
+            careers="true"
             />
             <div className="single-jobs-post" style={{paddingTop: "50px", paddingBottom:"50px"}}>
               <Container>
@@ -79,19 +109,19 @@ export class CareerDetails extends Component {
   
                      <p>{this.state.currentJob.jobDesc}</p>
                   </section>
-                  <section>
+                  <section style={essentialDisplay} >
                     <div className="JobEssential">
                         <h2 className="job-title">Essential Experience</h2>
-                            <ul>
-                                {essential}
+                            <ul class="list-style-two">
+                                {essentialExp}
                             </ul>
                     </div>
                 </section>
-                <section>
+                <section style={ideallyDisplay}>
                     <div class="JobIdle">
-                    <h2 class="job-title"> Ideally have</h2>
-                        <ul>
-
+                    <h2 class="job-title"> Essential Skills</h2>
+                        <ul class="list-style-two">
+                            {essentialSkill}
                         </ul>
                     </div>
                 </section>
