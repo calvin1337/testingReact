@@ -18,6 +18,7 @@ import Contact from './Containers/Contact/Contact';
 import errorPage from './Containers/404Page/errorPage';
 import Careers from './Containers/Careers/Careers';
 import CareerDetails from './Components/Careers/CareerDetails/CareerDetails';
+import News from './Containers/News/News';
 
 
 export class App extends Component {
@@ -78,6 +79,13 @@ export class App extends Component {
 
 
       <Route path="/careers/:id" exact component={CareerDetails} />
+
+      <Route path="/news" exact render={props => (
+        
+        <News />
+        
+      
+    )} />
 
             <Route component={errorPage} />
             </Switch>
