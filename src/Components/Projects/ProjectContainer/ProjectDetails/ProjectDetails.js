@@ -4,9 +4,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import Header from '../../../Header/Header';
 import "./projectDetails.css"
 import Accordion from '../../ProjectAccordion/Accordion';
-
-import image from "../../../../images/ProjectImages/cablecutter.jpg"
-import ProjectContent from './ProjectContent';
+import ProjectContent from "../ProjectDetails/ProjectContent";
 
 export class ProjectDetails extends Component {
 
