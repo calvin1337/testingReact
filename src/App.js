@@ -19,6 +19,7 @@ import errorPage from './Containers/404Page/errorPage';
 import Careers from './Containers/Careers/Careers';
 import CareerDetails from './Components/Careers/CareerDetails/CareerDetails';
 import News from './Containers/News/News';
+import NewsPostFull from './Components/News/NewsPostFull/NewsPostFull';
 
 
 export class App extends Component {
@@ -86,6 +87,9 @@ export class App extends Component {
         
       
     )} />
+
+    <Route path="/news/:id" exact component={NewsPostFull} />
+
 
             <Route component={errorPage} />
             </Switch>

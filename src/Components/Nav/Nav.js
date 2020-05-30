@@ -72,8 +72,8 @@ export class NavigationBar extends Component {
         <LinkContainer to="/about">
             <Nav.Link >About</Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/services">
-            <Nav.Link>Services</Nav.Link>
+        <LinkContainer  to="/services">
+            <Nav.Link >Services</Nav.Link>
         </LinkContainer>
         <LinkContainer to="projects">
             <Nav.Link >Projects</Nav.Link>
