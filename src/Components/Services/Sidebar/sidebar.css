@@ -84,13 +84,24 @@ margin-bottom: 60px!important;
     margin: 0;
 }
 
+.ServiceLinks ul button,
 .ServiceLinks ul a {
     background: #222;
     color: white;
     padding: 18px 25px;
     font-weight: 500;
     display: block;
+    width:100%;
+    border:none;
     
+}
+
+.ServiceLinks ul a{
+    text-align:center;
+}
+
+.ServiceLinks ul a:hover{
+    text-decoration: none;
 }
 
 .ServiceLinks ul>li+li {

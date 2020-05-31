@@ -8,6 +8,7 @@ import Fabrication from '../../Components/Services/IndividualServices/Fabricatio
 import ExoticWelding from '../../Components/Services/IndividualServices/ExoticWelding'
 import Machining from '../../Components/Services/IndividualServices/Machining'
 import WaterJet from '../../Components/Services/IndividualServices/WaterJet'
+import Qhse from '../../Components/Services/IndividualServices/Qhse'
 
 
 export class Services extends Component {
@@ -72,7 +73,9 @@ export class Services extends Component {
             currentPage = <h3>Assembly & Testing</h3>
         }
         
-
+        if(this.state.activepage === "qhse"){
+            currentPage = <Qhse />
+        }
 
 
         return (

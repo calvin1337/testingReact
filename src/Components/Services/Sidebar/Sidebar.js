@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "./sidebar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faAngleDoubleRight} from "@fortawesome/free-solid-svg-icons";
+import {Link } from "react-router-dom"
 
 export class Sidebar extends Component {
     render() {
@@ -53,8 +54,8 @@ export class Sidebar extends Component {
                 </div>
                 <div className="ServiceLinks">
                     <ul>
-                        <li><a href="/">Current Vacancies</a></li>
-                        <li><a href="/">QSHE</a></li>
+                        <li><Link to="/careers">Current Vacancies</Link></li>
+                        <li><button onClick={() => this.props.currentpage("qhse")}>QSHE</button></li>
                     </ul>
                 </div>
                     <div className="contactLink">
