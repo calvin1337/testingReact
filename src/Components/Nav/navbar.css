@@ -20,3 +20,17 @@ nav{
     width: calc(100% - 6em) !important;
     margin: 0 auto;
 } */
+
+@media (max-width: 600px) {
+    .nav .bg-dark{
+        background-color: #212529 !important;
+    }
+
+    .navbar-dark .navbar-brand{
+        margin: auto !important;
+    }
+
+    .ml-auto{
+        margin: auto !important;
+    }
+}

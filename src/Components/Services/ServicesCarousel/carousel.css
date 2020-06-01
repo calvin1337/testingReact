@@ -6,4 +6,12 @@
   content: '' !important;
 }
 
+.services{
+  height: 700px;
+}
 
+@media (max-width: 600px) {
+  .services{
+    height:650px
+  }
+}

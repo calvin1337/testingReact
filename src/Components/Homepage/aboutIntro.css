@@ -79,3 +79,9 @@ top: -25px;
     height:245px;
    width:235px;
 }
+
+@media  (max-width: 600px) {
+    .img-container {
+        display: none;   
+     }
+  }
