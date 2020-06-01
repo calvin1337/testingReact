@@ -89,4 +89,29 @@
     }
   }
 
- 
+  @media only screen and (min-width: 600px) {
+    .hero-container h1{
+      font-size:50px;
+    margin:0;
+      line-height:50px;
+    }
+
+    .hero-container h3{
+        font-size:25px;
+    }
+
+    .homeSections{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+  }
+
+  
+
+  @media only screen and (min-width: 768px){
+    .hero-container h1{
+      line-height: 50px;
+      font-size:50px;
+      margin: 0;
+    }
+  }

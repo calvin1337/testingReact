@@ -85,3 +85,30 @@ top: -25px;
         display: none;   
      }
   }
+
+  @media only screen and (min-width: 600px){
+      .img-container{
+          display: none;
+      }
+  }
+
+  @media only screen and (min-width: 768px){
+      .img-container{
+          display:block;
+      }
+    .img-container img:first-child {
+        top:100px;
+        right:0;
+        left:100px
+    }
+
+    .img-container img:nth-child(2){
+        top:220px;
+        right:50px;
+    }
+
+    .img-container img:nth-child(3){
+        top:400px;
+        right:0;
+    }
+  }
