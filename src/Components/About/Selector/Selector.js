@@ -7,26 +7,6 @@ export class Selector extends Component {
         
         let aboutBtn = ""
         let facilitiesBtn = ""
-        if(this.props.activepage === "about"){
-            aboutBtn = {
-                color: "#fff" ,
-                background: "#686A6E"
-            }
-            facilitiesBtn = {
-                color: "#fff",
-                background: "#212529"
-            }
-        } else {
-            aboutBtn = {
-                color: "#fff",
-                background: "#212529"
-            }
-             facilitiesBtn = {
-                color: "#fff",
-                background: "#686A6E"
-            }
-    
-        }
         
        
 
@@ -37,13 +17,13 @@ export class Selector extends Component {
             <div className="linkContainer">
             <div className="testing">
                 <ul>
-                    <li class="pageItem">
-                      <button style={aboutBtn} onClick={() => this.props.currentpage("about")} href="/">About us</button>
+                    <li className={this.props.activepage === "about" ? "active" : null} onClick={() => this.props.currentpage("about")} >
+                      About us
                     </li>
                     
 
-                 <li class="pageItem">
-                <button style={facilitiesBtn} onClick={() => this.props.currentpage("facilities")} href="/">Facilites</button>
+                 <li className={this.props.activepage === "facilities" ? "active" : null} onClick={() => this.props.currentpage("facilities")}>
+                      Facilites
                 </li>
                 </ul>
   </div>

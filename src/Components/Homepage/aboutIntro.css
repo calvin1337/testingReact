@@ -79,7 +79,9 @@ top: -25px;
     height:245px;
    width:235px;
 }
-
+.homeSections{
+    padding:100px;
+}
 @media  (max-width: 600px) {
     .img-container {
         display: none;   
@@ -92,7 +94,7 @@ top: -25px;
       }
   }
 
-  @media only screen and (min-width: 768px){
+  @media only screen and (max-width: 768px){
       .img-container{
           display:block;
       }
@@ -112,3 +114,7 @@ top: -25px;
         right:0;
     }
   }
+
+  .img-container{
+    display:block;
+}
