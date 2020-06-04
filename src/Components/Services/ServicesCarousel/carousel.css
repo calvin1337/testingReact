@@ -19,6 +19,9 @@
     width: 400px !important;
   }
 
+  .slick-cloned, .slick-active, .slick-slide{
+    width:1 !important;
+  }
   .slick-cloned {
     display: none !important;
   }
@@ -28,17 +31,20 @@
 @media only screen and (min-width: 600px){
   
   .slick-slide{
-    width:300px !important;
+    width:500px !important;
   }
 
   
-
-  .slick-cloned{
+  .slick-cloned, .slick-active, .slick-slide{
+    width:1 !important;
+  }
+  .slick-cloned {
     display: none !important;
   }
+  
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
   .slick-cloned, .slick-active, .slick-slide{
     width:1 !important;
   }
@@ -50,4 +56,12 @@
     width:300px !important
   }
 
+}
+
+
+
+
+
+.slick-slide{
+  width:300px !important
 }
