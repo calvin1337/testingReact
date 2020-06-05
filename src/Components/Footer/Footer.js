@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Container, Col } from "react-bootstrap";
+import {Link } from "react-router-dom"
 import Logo from "../../images/logowhite.png"
 import "./footer.css"
 
@@ -13,10 +14,9 @@ function Footer() {
                     <div className="footer-pad">
                         <h4 className="footertitle">CLOCKWISE</h4>
                         <ul className="list-unstyled">
-                            <li><a href="#"></a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="privacy.html">Privacy</a></li>
-                            <li><a href="contact.html">Get in touch</a></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/privacy">Privacy</Link></li>
+                            <li><Link to="/contact">Get in touch</Link></li>
                         </ul>
                     </div>
                 </Col>
@@ -25,15 +25,15 @@ function Footer() {
                     <div className="footer-pad">
                       <h4 className="footertitle">SERVICES</h4>
                         <ul className="list-unstyled">
-                          <li><a href="services/engineering.html">Design & Engineering</a></li>
-                          <li><a href="services/fabrication.html">Fabrication</a></li>
-                          <li><a href="services/alwelding.html">Aluminium Welding</a></li>
-                          <li><a href="services/exoticwelding.html">Stainless Steels & Exotic Material Welding</a></li>
-                          <li><a href="services/machining.html">Machining</a></li>
-                          <li><a href="services/wjcutting.html">Water-jet Cutting & Profiling</a></li>
-                          <li><a href="services/piping.html">Hydraulics & Piping</a></li>
-                          <li><a href="services/rental.html">Rental Services</a></li>
-                         <li><a href="services/assembly.html">Assembly & Testing</a></li>
+                          <li><Link to="/services/designAndEngineering" >Design & Engineering</Link></li>
+                          <li><Link to="/services/fabrication" >Fabrication</Link></li>
+                          <li><Link to="/services/aluminumWelding">Aluminium Welding</Link></li>
+                          <li><Link to="/services/stainlessWelding" >Stainless Steels & Exotic Material Welding</Link></li>
+                          <li><Link to="/services/machining" >Machining</Link></li>
+                          <li><Link to="/services/waterjetCuttingAndProfiling" >Water-jet Cutting & Profiling</Link></li>
+                          <li><Link to="/services/hydraulicsAndPiping">Hydraulics & Piping</Link></li>
+                          <li><Link to="/services/rental" >Rental Services</Link></li>
+                         <li><Link to="/services/assemblyAndTesting" >Assembly & Testing</Link></li>
                         </ul>
                     </div>
                 </Col>

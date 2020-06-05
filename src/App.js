@@ -54,6 +54,9 @@ export class App extends Component {
         </div>
         
       )} />
+
+      <Route path="/services/:id" exact component={ServicesContainer} />
+
       <Route path="/projects" exact render={props => (
         <div>
           <Projects />
@@ -93,9 +96,10 @@ export class App extends Component {
 
             <Route component={errorPage} />
             </Switch>
-      </Router>
+      
 
       <Footer />
+      </Router>
     </div>
     )
   }

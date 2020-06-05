@@ -9,9 +9,19 @@ import ExoticWelding from '../../Components/Services/IndividualServices/ExoticWe
 import Machining from '../../Components/Services/IndividualServices/Machining'
 import WaterJet from '../../Components/Services/IndividualServices/WaterJet'
 import Qhse from '../../Components/Services/IndividualServices/Qhse'
+import { withRouter } from 'react-router'
 
 
 export class Services extends Component {
+
+    componentDidMount() {
+        if(this.props.match.path === "/services/:id"){
+            const servicesId = this.props.match.params.id
+            this.setState({activepage: servicesId})
+        }
+        
+    }
+    
     
     state = {
         activepage : "allservices"
@@ -99,4 +109,4 @@ export class Services extends Component {
     }
 }
 
-export default Services
+export default withRouter(Services);
