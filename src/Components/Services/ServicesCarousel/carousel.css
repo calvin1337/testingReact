@@ -59,7 +59,9 @@
 }
 
 
-
+.slick-cloned{
+  display:block !important;
+}
 
 
 .slick-slide{
