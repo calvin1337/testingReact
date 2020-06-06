@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styles from "./carousel.module.css";
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export class ServicesCard extends Component {
    
@@ -20,7 +21,7 @@ export class ServicesCard extends Component {
         <Card.Text className="text-muted">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae error suscipit soluta explicabo autem libero.
         </Card.Text>
-        <Button variant="secondary">Learn More</Button>
+          <Link to={this.props.linkTo} className="btn btn-secondary" style={{color:"white"}}>Learn More</Link>
       </Card.Body>
     </Card>
         )

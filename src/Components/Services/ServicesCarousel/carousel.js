@@ -88,31 +88,31 @@ export class carousel extends Component {
         
         <Slider {...settings}>
           <div>
-            <Card image={design} serviceTitle="Design & Engineering" />
+            <Card linkTo="/services/designAndEngineering" image={design} serviceTitle="Design & Engineering" />
           </div>
           <div>
-            <Card image={fabrication} serviceTitle="Fabrication"/>
+            <Card linkTo="/services/fabrication" image={fabrication} serviceTitle="Fabrication"/>
           </div>
           <div>
-            <Card image={aluminumwelding} serviceTitle="Aluminum Welding" />
+            <Card linkTo="/services/aluminumWelding" image={aluminumwelding} serviceTitle="Aluminum Welding" />
           </div>
           <div>
-          <Card image={Welding} serviceTitle="Stainless Steels & Exotic Material "/>
+          <Card linkTo="/services/stainlessWelding" image={Welding} serviceTitle="Stainless Steels & Exotic Material "/>
           </div>
           <div>
-          <Card image={machining} serviceTitle="Machining"/>
+          <Card linkTo="/services/machining" image={machining} serviceTitle="Machining"/>
           </div>
           <div>
-          <Card image={waterjet} serviceTitle="Water-jet cutting & profiling" />
+          <Card linkTo="/services/waterjetCuttingAndProfiling" image={waterjet} serviceTitle="Water-jet cutting & profiling" />
           </div>
           <div>
-          <Card image={hydrolicpress} serviceTitle="Hydraulics & Piping" />
+          <Card linkTo="" image={hydrolicpress} serviceTitle="Hydraulics & Piping" />
           </div>
           <div>
-          <Card image={rental} serviceTitle="Rental Services" />
+          <Card linkTo="/services/hydraulicsAndPiping" image={rental} serviceTitle="Rental Services" />
           </div>
           <div>
-          <Card image={assembly} serviceTitle="Assembly & Testing" />
+          <Card linkTo="/services/assemblyAndTesting" image={assembly} serviceTitle="Assembly & Testing" />
           </div>
         </Slider>
       </div>
