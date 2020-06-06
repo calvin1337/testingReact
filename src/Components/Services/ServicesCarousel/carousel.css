@@ -10,10 +10,6 @@
   height: 700px;
 }
 
-.slick-cloned{
-  display:block !important;
-}
-
 
 @media (max-width: 600px) {
   .services{
@@ -63,7 +59,12 @@
 
 }
 
-@media only screen and (max-width: 9px){
+@media only screen and (mix-width: 992px){
+  
+.slick-cloned{
+  display:block !important;
+}
+
 }
 
 
