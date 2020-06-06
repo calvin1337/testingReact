@@ -59,7 +59,7 @@
 
 }
 
-@media only screen and (mix-width: 992px){
+@media  (min-width: 992px){
   
 .slick-cloned{
   display:block !important;
