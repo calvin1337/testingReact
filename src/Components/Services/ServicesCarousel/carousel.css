@@ -10,6 +10,11 @@
   height: 700px;
 }
 
+.slick-cloned{
+  display:block !important;
+}
+
+
 @media (max-width: 600px) {
   .services{
     height:650px
@@ -58,10 +63,10 @@
 
 }
 
-
-.slick-cloned{
-  display:block !important;
+@media only screen and (max-width: 9px){
 }
+
+
 
 
 .slick-slide{
