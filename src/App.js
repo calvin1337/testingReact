@@ -20,6 +20,7 @@ import Careers from './Containers/Careers/Careers';
 import CareerDetails from './Components/Careers/CareerDetails/CareerDetails';
 import News from './Containers/News/News';
 import NewsPostFull from './Components/News/NewsPostFull/NewsPostFull';
+import Privacy from './Containers/Privacy/Privacy';
 
 
 export class App extends Component {
@@ -93,6 +94,7 @@ export class App extends Component {
 
     <Route path="/news/:id" exact component={NewsPostFull} />
 
+          <Route path="/privacy" exact component={Privacy} />
 
             <Route component={errorPage} />
             </Switch>
