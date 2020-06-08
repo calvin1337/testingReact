@@ -45,7 +45,7 @@
   
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 998px){
   .slick-cloned, .slick-active, .slick-slide{
     width:1 !important;
   }
@@ -59,11 +59,19 @@
 
 }
 
+@media (max-width: 1200px){
+  .slick-cloned{
+    display: block;
+  }
 
+  .slick-slide{
+    width: 330px !important;
+  }
+}
   
 
 
-@media (min-width: 1200){
+@media (min-width: 1200px){
   
 .slick-cloned{
   display:block !important;

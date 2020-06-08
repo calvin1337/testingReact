@@ -3,10 +3,14 @@
     height:440px;
     }
     
-    ul {
+    .newsPost ul {
         margin: 0px;
         list-style: none;
         padding:0px;
+    }
+
+    .privacy ul{
+        margin-left:40px;
     }
     
     li.post-category {
@@ -52,6 +56,8 @@
     .post-title {
         margin-bottom: 15px;
     }
+
+    
     
     .post-text p {
       margin-bottom:20px;
