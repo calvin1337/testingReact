@@ -5,7 +5,7 @@ export class Privacy extends Component {
     render() {
         return (
             <div className="privacy" style={{paddingTop:"100px"}}>
-                <Container style={{paddingTop:"100px", paddingBottom:"100px"}}>
+                <Container style={{paddingTop:"50px", paddingBottom:"100px"}}>
                     <Row>
                         <Col md="12">
                         <div class="sectionTitle">

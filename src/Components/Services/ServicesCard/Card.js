@@ -21,7 +21,7 @@ export class ServicesCard extends Component {
         <Card.Text className="text-muted">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae error suscipit soluta explicabo autem libero.
         </Card.Text>
-          <Link arie-label={`Link to ${this.props.serviceTitle} Service`} to={this.props.linkTo} className="btn btn-secondary" style={{color:"white"}}>Learn More</Link>
+          <Link aria-label={`Link to ${this.props.serviceTitle} Service`} to={this.props.linkTo} className="btn btn-secondary" style={{color:"white"}}>Learn More</Link>
       </Card.Body>
     </Card>
         )
