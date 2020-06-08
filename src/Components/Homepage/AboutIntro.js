@@ -27,9 +27,9 @@ function AboutIntro() {
                     </Col>
                     <Col md="6"  className="d-none d-md-block">
                     <div className="img-container">
-                     <img src="https://images.unsplash.com/photo-1564182842519-8a3b2af3e228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" alt="" className="img img-responsive" />
-                     <img src="https://images.unsplash.com/photo-1558611997-dd5b20e08c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" className="img img-responsive" />
-                      <img src="http://themexriver.com/mega-industry/mega-industry/images/about-us/img-3.jpg" alt="" className="img img-responsive" />
+                     <img src="https://images.unsplash.com/photo-1564182842519-8a3b2af3e228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" alt="Man welding aluminum" className="img img-responsive" />
+                     <img src="https://images.unsplash.com/photo-1558611997-dd5b20e08c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Man using grinder" className="img img-responsive" />
+                      <img src="http://themexriver.com/mega-industry/mega-industry/images/about-us/img-3.jpg" alt="Grinding Sparks" className="img img-responsive" />
                     </div>
                     </Col>
                 </Row>

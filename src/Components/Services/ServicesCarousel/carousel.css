@@ -10,10 +10,6 @@
   height: 700px;
 }
 
-.slick-cloned{
-  display:block !important;
-}
-
 
 @media (max-width: 600px) {
   .services{
@@ -33,7 +29,7 @@
 
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 600px){
   
   .slick-slide{
     width:500px !important;
@@ -49,7 +45,7 @@
   
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1200px){
   .slick-cloned, .slick-active, .slick-slide{
     width:1 !important;
   }
@@ -63,12 +59,19 @@
 
 }
 
-@media only screen and (max-width: 9px){
+
+  
+
+
+@media (min-width: 1200){
+  
+.slick-cloned{
+  display:block !important;
 }
-
-
 
 
 .slick-slide{
   width:300px !important
+}
+
 }

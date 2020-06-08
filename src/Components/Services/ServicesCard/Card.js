@@ -15,13 +15,13 @@ export class ServicesCard extends Component {
      
       style={{ width: '18rem', margin: "10px"}}
     >
-      <Card.Img height="190px" width="285px" variant="top" src={this.props.image} />
+      <Card.Img alt={`Image of ${this.props.serviceTitle} Service`} height="190px" width="285px" variant="top" src={this.props.image} />
       <Card.Body >
         <Card.Title style={{fontSize: "1rem"}}>{this.props.serviceTitle}</Card.Title>
         <Card.Text className="text-muted">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae error suscipit soluta explicabo autem libero.
         </Card.Text>
-          <Link to={this.props.linkTo} className="btn btn-secondary" style={{color:"white"}}>Learn More</Link>
+          <Link arie-label={`Link to ${this.props.serviceTitle} Service`} to={this.props.linkTo} className="btn btn-secondary" style={{color:"white"}}>Learn More</Link>
       </Card.Body>
     </Card>
         )
