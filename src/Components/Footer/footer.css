@@ -46,3 +46,9 @@ footer img{
     width:auto;
     height:70px;
 }
+
+@media (min-width:767px){
+  .companyLogo{
+    text-align: center;
+  }
+}

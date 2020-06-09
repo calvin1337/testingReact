@@ -1,5 +1,14 @@
 .services .slick-prev, .slick-next {
   font-size: 15px !important;
+
+}
+
+.slick-prev{
+  left: -50px !important;
+}
+
+.slick-next{
+  right:-50px !important;
 }
 
  .services .slick-prev:before, .slick-next:before  {
@@ -42,6 +51,10 @@
   .slick-cloned {
     display: none !important;
   }
+
+  .services .slick-prev, .slick-next {  
+    display: none !important;  
+  }
   
 }
 
@@ -61,7 +74,7 @@
 
 @media (max-width: 1200px){
   .slick-cloned{
-    display: block;
+    display: none !important;
   }
 
   .slick-slide{
@@ -83,3 +96,4 @@
 }
 
 }
+

@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer-middle">
             <Container>
               <Row>
-                <Col md="3" sm="6">
+                <Col md="3" sm="12">
                     <div className="footer-pad">
                         <h4 className="footertitle">CLOCKWISE</h4>
                         <ul className="list-unstyled">
@@ -21,7 +21,7 @@ function Footer() {
                     </div>
                 </Col>
 
-                <Col md="3" sm="6">
+                <Col md="3" sm="12">
                     <div className="footer-pad">
                       <h4 className="footertitle">SERVICES</h4>
                         <ul className="list-unstyled">
@@ -37,7 +37,7 @@ function Footer() {
                         </ul>
                     </div>
                 </Col>
-                <Col md="3" sm="6">
+                <Col md="3" sm="12">
                     <div className="footer-pad">
                         <h4 className="footertitle">NEWS</h4>
                             <ul className="list-unstyled">
@@ -48,15 +48,18 @@ function Footer() {
                             </ul>
                     </div>
                 </Col>
-                <Col md="3">
-                    <h4 className="footertitle">CLOCKWISE TECHNOLOGIES LTD</h4>
+                <Col md="3" sm="12" >
+                    <h4 className="footertitle">Contact</h4>
                       <ul className="address">
                          <li>Unit 1A, Gourdieburn</li>
                          <li>Potterton, AB23 8UY</li>
                          <li>01234 567890</li>
                          <li>info@clockwise-tech.com</li>
                     </ul>
-                        <img alt="company logo" src={Logo}></img>
+                            <div className="companyLogo">
+                            <img alt="company logo" src={Logo}></img>
+
+                            </div>
 
                 </Col>
               </Row>

@@ -58,7 +58,7 @@ border-radius: 20px;
   }
   
 
-  @media (max-width: 766px) {
+  @media (max-width: 767px) {
     .parallax {
       height:1000px
     }
