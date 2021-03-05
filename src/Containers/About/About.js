@@ -33,7 +33,7 @@ export class About extends Component {
                   <Selector activepage={this.state.activepage} currentpage={(testing) => this.pageSelector(testing)} />
                     {currentPage}
                  
-                 
+                 <h1>Test</h1>
             </div>     
         )
     }
