@@ -21,6 +21,7 @@ import CareerDetails from './Components/Careers/CareerDetails/CareerDetails';
 import News from './Containers/News/News';
 import NewsPostFull from './Components/News/NewsPostFull/NewsPostFull';
 import Privacy from './Containers/Privacy/Privacy';
+import AboutNew from './updatedPages/About/AboutNew';
 
 
 export class App extends Component {
@@ -45,6 +46,13 @@ export class App extends Component {
       <Route path="/about" exact render={props => (
         
         <About />
+        
+      
+    )} />
+
+      <Route path="/aboutnew" exact render={props => (
+        
+        <AboutNew />
         
       
     )} />
