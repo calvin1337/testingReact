@@ -12,17 +12,16 @@ export class AboutUs extends Component {
               width="800" />
             </div>
             <div class="servicesTitle">
-            <h2 class="serviceHeader">Who Are We?</h2>
+            <h2 class="serviceHeader">Unbeaten Service!</h2>
             </div>
             <p>
-            Clockwise Technologies has grown to become a reliable ally in delivering critical, 
-            engineering projects to its valuable list of customers. With the ability to provide “all engineering” services in-house our company has the ability and track record of making the impossible possible and sometimes on unbelievably short timescales.
+            We completely conscious of the need to adjust or services as our customer’s needs change too and our customers success if pivotal on our own.
             </p>
             <p>
-            Privately owned and crewed with people of exceptional talent, the company has taken a pragmatic and steady approach to developing services and the operating systems that take care of our customers, with an ongoing effort to develop our people, premises, equipment.
+            Providing a huge emphasis on relationships, Clockwise will always be there to assist, support and supply our customer’s whenever they ask.        
             </p>
             <p>
-            We pride ourselves on our can-do attitude to any request and the relationships that we maintain with our customers above all!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloremque quam repellat optio hic a provident saepe, perferendis excepturi corrupti vero neque quae laudantium rerum illo dicta minima explicabo nobis?
             </p>
         </div>
         )

@@ -20,17 +20,17 @@ export class AboutSidebar extends Component {
             <div className="serviceSideBar">
                  <div  className="serviceList">
                     <ul>
-                        <li className="current">
-                            <button>Who are we?</button>
+                        <li className={this.props.activePage === "whoAreWe" ? "current" : null}>
+                            <button onClick={() => this.props.currentpage("whoAreWe")}>Who are we?</button>
                         </li>
-                        <li>
-                            <button>Unbeaten service</button>
+                        <li className={this.props.activePage === "service" ? "current" : null}>
+                            <button onClick={() => this.props.currentpage("service")}>Unbeaten service</button>
                         </li>
-                        <li>
-                            <button>Years of experience</button>
+                        <li className={this.props.activePage === "yearsExp" ? "current" : null}>
+                            <button onClick={() => this.props.currentpage("yearsExp")}>Years of experience</button>
                         </li>
-                        <li>
-                            <button>Our facilities</button>
+                        <li className={this.props.activePage === "ourFacilities" ? "current" : null}>
+                            <button onClick={() => this.props.currentpage("ourFacilities")}>Our facilities</button>
                         </li>
                     </ul>
                 </div>
