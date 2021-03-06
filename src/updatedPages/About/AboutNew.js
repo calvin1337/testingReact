@@ -6,6 +6,9 @@ import AboutUs from "../../Components/newAbout/AboutUs"
 import OurFacilities from "../../Components/newAbout/OurFacilites"
 import WhoAreWe from "../../Components/newAbout/WhoAreWe"
 import YearsExp from "../../Components/newAbout/YearsOfExp"
+import Counter from "../../Components/About/Counter/Counter"
+import ClockwiseMap from "../../Components/Facilites/ClockwiseMap"
+
 // import { withRouter } from 'react-router'
 
 export class AboutNew extends Component {
@@ -25,10 +28,14 @@ export class AboutNew extends Component {
     render() {
 
         let currentPage = ""
-
+        let mapOn = ""
         
         if(this.state.activepage === "whoAreWe" ){
-            currentPage = <WhoAreWe /> 
+            currentPage = (
+              
+                    <WhoAreWe />
+                
+                ) 
         }
 
         if(this.state.activepage === "service" ){
@@ -43,12 +50,26 @@ export class AboutNew extends Component {
             currentPage = <YearsExp />
         }
 
+        if(this.state.activepage === "ourFacilities"){
+            mapOn =(
+                <div style={{paddingBottom: "50px"}}>
+                    <ClockwiseMap />
+                </div>
+            ) 
+            
+            
+        }
+
+        if(this.state.activepage !== "ourFacilities"){
+            mapOn = <Counter />
+        }
+
         return (
             <React.Fragment>
             <Header 
             headerTitle="About Us" />
-            <div style={{paddingTop: "50px", paddingBottom:"50px"}} >
-                <Container style={{paddingTop: "50px"}}>
+            <div style={{paddingTop: "50px"}} >
+                <Container style={{paddingTop: "50px", paddingBottom:"50px"}}>
                     <Row>
                         <Col md="3">
 
@@ -61,11 +82,12 @@ export class AboutNew extends Component {
                         <Col md="9">
 
                              {currentPage}
-                                
+                            
                         </Col>
-                    
+                       
                     </Row>
                 </Container>
+                {mapOn}
             </div>
             </React.Fragment>
         )

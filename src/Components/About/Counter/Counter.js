@@ -63,7 +63,7 @@ export class CounterContainer extends Component {
                 top:
                   10
               }} delayedCall>
-            <div className="parallax" >
+            <div className="parallax">
                 
                 <Container style={{paddingTop:"80px"}} >
                 <div className="section-headline-white" >
