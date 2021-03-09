@@ -12,17 +12,21 @@ export class OurFacilities extends Component {
               width="800" />
             </div>
             <div class="servicesTitle">
-            <h2 class="serviceHeader">Who Are We?</h2>
+            <h2 class="serviceHeader">Our Facilities</h2>
             </div>
             <p>
-            Clockwise Technologies has grown to become a reliable ally in delivering critical, 
-            engineering projects to its valuable list of customers. With the ability to provide “all engineering” services in-house our company has the ability and track record of making the impossible possible and sometimes on unbelievably short timescales.
+            Based just outside of Bridge of Don, at Potterton, is the base for all of Clockwise Technologies operations.
+            Clockwise Technologies has a large workshop of 30,000 ft of floorspace and a large yard totaling 23,000ft used for assembly of large project and the storage/handling of raw materials
             </p>
             <p>
-            Privately owned and crewed with people of exceptional talent, the company has taken a pragmatic and steady approach to developing services and the operating systems that take care of our customers, with an ongoing effort to develop our people, premises, equipment.
+            The workshop is divided into five main areas comprising of inspection and quality control/goods in&out, water-jetting, carbon fabrication, clean workshop housing the machining, Aluminum and stainless fabrication and a section for assembly/testing as well as hydraulics.
             </p>
             <p>
-            We pride ourselves on our can-do attitude to any request and the relationships that we maintain with our customers above all!
+            This self-contained workshop is all under one roof and provides and open and accessible site close to the nearest business centres of Dyce and Bridge of Don as well as adjacent to the Balmedie access to Altens and the south of Aberdeen.
+            </p>
+            <p>
+            With a prominent roadside position 2 miles north of Bridge of Don in Aberdeen, and on the edge of the village of Potterton, our facilities are in easy reach of any customer regardless of their location.
+            
             </p>
         </div>
         )

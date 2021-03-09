@@ -8,6 +8,7 @@ import WhoAreWe from "../../Components/newAbout/WhoAreWe"
 import YearsExp from "../../Components/newAbout/YearsOfExp"
 import Counter from "../../Components/About/Counter/Counter"
 import ClockwiseMap from "../../Components/Facilites/ClockwiseMap"
+import QHSE from "../../Components/Services/IndividualServices/Qhse"
 
 // import { withRouter } from 'react-router'
 
@@ -55,6 +56,15 @@ export class AboutNew extends Component {
                 <div style={{paddingBottom: "50px"}}>
                     <ClockwiseMap />
                 </div>
+            ) 
+            
+            
+        }
+        if(this.state.activepage === "QSHE"){
+            currentPage =(
+                
+                    <QHSE />
+                
             ) 
             
             

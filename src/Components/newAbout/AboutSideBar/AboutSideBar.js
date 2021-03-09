@@ -37,7 +37,7 @@ export class AboutSidebar extends Component {
                 <div className="ServiceLinks">
                     <ul>
                         <li><Link to="/careers">Current Vacancies</Link></li>
-                        <li><button>QSHE</button></li>
+                        <li><button onClick={() => this.props.currentpage("QSHE")}>QSHE</button></li>
                     </ul>
                 </div>
                     <div className="contactLink">
