@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import {Row, Container} from "react-bootstrap"
+import {Row, Container, Col} from "react-bootstrap"
 import SingleProject from './SingleProject'
 import Selector from '../Selector/Selector'
 import { withRouter } from 'react-router'
-
+import AboutSideBar from "../../newAbout/AboutSideBar/AboutSideBar"
 
 import cablecutter from "../../../images/ProjectImages/cablecutter.jpg";
 import debricap from "../../../images/ProjectImages/debricap.jpg"
@@ -81,7 +81,13 @@ export class ProjectContainer extends Component {
 
             <Container style={{marginTop:"50px", marginBottom:"50px"}}>
                 <Row style={{margin: "auto"}}>
+                    <Col md="3" >
+                        <AboutSideBar />
+                    </Col>
+                    <Col md="9" >
+                        <div className="project-container">
 
+                        
                     {/*Row 1*/}
                     <div className="filter welding">
                     <SingleProject 
@@ -92,9 +98,9 @@ export class ProjectContainer extends Component {
                     />
                     
                     
-
+                    
                     </div>
-
+                    
                     <div className="filter engineering">
                     <SingleProject
                      projectImage={debricap}
@@ -157,9 +163,9 @@ export class ProjectContainer extends Component {
                      postSelectedHandler={(id) => this.postSelectedHandler(id)}
                     />
                     </div>
-
+                    </div>
+                    </Col>
                     
-                   
                 </Row>
             </Container>
           
