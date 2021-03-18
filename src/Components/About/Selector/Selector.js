@@ -5,8 +5,7 @@ export class Selector extends Component {
     
     render() {
         
-        let aboutBtn = ""
-        let facilitiesBtn = ""
+        
         
        
 

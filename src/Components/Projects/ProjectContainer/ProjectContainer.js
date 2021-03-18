@@ -29,7 +29,7 @@ export class ProjectContainer extends Component {
             arr1 = element.className.split(" ");
             arr2 = name.split(" ");
             for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                if (arr1.indexOf(arr2[i]) === -1) {element.className += " " + arr2[i];}
             }
       }
       
@@ -56,7 +56,7 @@ export class ProjectContainer extends Component {
      filterSort = (c) => {
         var x, i;
         x = document.getElementsByClassName("filter");
-        if (c == "all") c = "";
+        if (c === "all") c = "";
         for (i = 0; i < x.length; i++) {
           this.RemoveClass(x[i], "show");
           if (x[i].className.indexOf(c) > -1) this.AddClass(x[i], "show");

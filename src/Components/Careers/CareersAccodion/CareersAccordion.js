@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Accordion ,  Card} from "react-bootstrap";
 import "./careersAccordion.css";
-import CareersBtn from './CareersButton/CareersBtn';
 
 
 export class CareersAccordion extends Component {

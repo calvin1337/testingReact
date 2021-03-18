@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import styles from "./carousel.module.css";
-import { Card, Button } from "react-bootstrap";
+
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export class ServicesCard extends Component {

@@ -10,7 +10,6 @@ import { BrowserRouter as Router , Route, Switch} from 'react-router-dom'
 import Nav from "./Components/Nav/Nav"
 import Footer from "./Components/Footer/Footer";
 import ServicesContainer from "./Containers/Services/Services";
-import About from './Containers/About/About';
 import ScrollToTop from './Components/ScrollTop';
 import Projects from './Containers/Projects/Projects';
 import ProjectDetails from './Components/Projects/ProjectContainer/ProjectDetails/ProjectDetails';
@@ -43,12 +42,7 @@ export class App extends Component {
         
       )} />
 
-      {/* <Route path="/about" exact render={props => (
-        
-        <About />
-        
       
-    )} /> */}
 
       <Route path="/about" exact render={props => (
         
