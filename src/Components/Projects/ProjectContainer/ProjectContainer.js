@@ -20,7 +20,8 @@ import toolingbasket from "../../../images/ProjectImages/toolingbasket.jpg"
 export class ProjectContainer extends Component {
 
     state = {
-        Selected : "all"
+        activePage : "all"
+
     }
 
     AddClass = (element, name) => {
@@ -45,7 +46,7 @@ export class ProjectContainer extends Component {
       }
 
       filterSelection = (c) => {
-        this.setState({Selected: c},
+        this.setState({activePage: c},
             () => {
                 this.filterSort(c)
         })
@@ -71,18 +72,31 @@ export class ProjectContainer extends Component {
     
         this.props.history.push("/projects/" + id);
       }
+
+      pageSelector = (page) => {
+        this.setState({activepage: page},
+            () => {
+                console.log(this.state.activepage)
+        })
+        
+    }
       
     render() {
         return (
             <div>
 
             
-            <Selector selected={this.state.Selected} filterSelector={(c) => this.filterSelection(c)} />
+            {/* <Selector selected={this.state.Selected} filterSelector={(c) => this.filterSelection(c)} /> */}
 
             <Container style={{marginTop:"50px", marginBottom:"50px"}}>
                 <Row style={{margin: "auto"}}>
                     <Col md="3" >
-                        <AboutSideBar />
+                        <AboutSideBar
+                        activePage={this.state.activePage} 
+                        currentpage={(page) => this.pageSelector(page)}
+                        sidebarPage="projects"
+                        selected={this.state.Selected} filterSelector={(c) => this.filterSelection(c)}
+                        />
                     </Col>
                     <Col md="9" >
                         <div className="project-container">

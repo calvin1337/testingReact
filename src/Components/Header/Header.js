@@ -15,10 +15,15 @@ export class Header extends Component {
 
         if(this.props.headerTitle === "Our Services" || this.props.careers){
             headerImage = {
-                backgroundImage: `url("https://testatrading.org/wp-content/uploads/2017/12/Slider1.jpg")`
+                backgroundImage: `url("https://ide-nc.com/static/images/meds/meds_2.jpg")`
             }
         }
 
+        if(this.props.headerTitle === "Our Projects" ){
+            headerImage = {
+                backgroundImage: `url("https://ide-nc.com/static/images/meds/meds_2.jpg")`
+            }
+        }
         
 
         return (

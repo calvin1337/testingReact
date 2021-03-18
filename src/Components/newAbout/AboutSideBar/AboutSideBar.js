@@ -15,24 +15,50 @@ export class AboutSidebar extends Component {
         if(this.props.activePage === currentBtn){
 
         }
+        
+        let sidebar = ""
+
+        if(this.props.sidebarPage === "about"){
+            sidebar = (<ul>
+            <li className={this.props.activePage === "whoAreWe" ? "current" : null}>
+                <button onClick={() => this.props.currentpage("whoAreWe")}>Who are we?</button>
+            </li>
+            <li className={this.props.activePage === "service" ? "current" : null}>
+                <button onClick={() => this.props.currentpage("service")}>Unbeaten service</button>
+            </li>
+            <li className={this.props.activePage === "yearsExp" ? "current" : null}>
+                <button onClick={() => this.props.currentpage("yearsExp")}>Years of experience</button>
+            </li>
+            <li className={this.props.activePage === "ourFacilities" ? "current" : null}>
+                <button onClick={() => this.props.currentpage("ourFacilities")}>Our facilities</button>
+            </li>
+        </ul>)
+        }
+
+        if(this.props.sidebarPage === "projects"){
+            sidebar = (<ul>
+            <li className={this.props.activePage === "all" ? "current" : null}>
+                <button onClick={() => this.props.filterSelector("all")} >All Projects</button>
+            </li>
+            <li className={this.props.activePage === "welding" ? "current" : null}>
+                <button onClick={() => this.props.filterSelector("welding")}>Welding Projects</button>
+            </li>
+            <li className={this.props.activePage === "machining" ? "current" : null}>
+                <button onClick={() => this.props.filterSelector("machining")}>Machining Projects</button>
+            </li>
+            <li className={this.props.activePage === "engineering" ? "current" : null}>
+                <button onClick={() => this.props.filterSelector("engineering")}>Engineering Projects</button>
+            </li>
+        </ul>)
+        }
+
+        
+        
 
         return (
             <div className="serviceSideBar">
                  <div  className="serviceList">
-                    <ul>
-                        <li className={this.props.activePage === "whoAreWe" ? "current" : null}>
-                            <button onClick={() => this.props.currentpage("whoAreWe")}>Who are we?</button>
-                        </li>
-                        <li className={this.props.activePage === "service" ? "current" : null}>
-                            <button onClick={() => this.props.currentpage("service")}>Unbeaten service</button>
-                        </li>
-                        <li className={this.props.activePage === "yearsExp" ? "current" : null}>
-                            <button onClick={() => this.props.currentpage("yearsExp")}>Years of experience</button>
-                        </li>
-                        <li className={this.props.activePage === "ourFacilities" ? "current" : null}>
-                            <button onClick={() => this.props.currentpage("ourFacilities")}>Our facilities</button>
-                        </li>
-                    </ul>
+                    {sidebar}
                 </div>
                 <div className="ServiceLinks">
                     <ul>

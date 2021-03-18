@@ -86,7 +86,7 @@ export class AboutNew extends Component {
                             <AboutSidebar
                             activePage={this.state.activepage} 
                             currentpage={(page) => this.pageSelector(page)}
-                            
+                            sidebarPage="about"
                             />
                         </Col>
                         <Col md="9">

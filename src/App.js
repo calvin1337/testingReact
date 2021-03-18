@@ -43,14 +43,14 @@ export class App extends Component {
         
       )} />
 
-      <Route path="/about" exact render={props => (
+      {/* <Route path="/about" exact render={props => (
         
         <About />
         
       
-    )} />
+    )} /> */}
 
-      <Route path="/aboutnew" exact render={props => (
+      <Route path="/about" exact render={props => (
         
         <AboutNew />
         
