@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "132711a22dc77563424a1bdeb54429d9",
+    "revision": "2e58dde13bb15bb228b0d3a88fa7f0dd",
     "url": "/index.html"
   },
   {
-    "revision": "9cf884c6a21916fef9c5",
+    "revision": "dab7d91a1529afa9a167",
     "url": "/static/css/2.1d143842.chunk.css"
   },
   {
-    "revision": "2b56fad3728c421efd11",
-    "url": "/static/css/main.37342c6b.chunk.css"
+    "revision": "e45e24b67c5a0d39be20",
+    "url": "/static/css/main.973eeab4.chunk.css"
   },
   {
-    "revision": "9cf884c6a21916fef9c5",
-    "url": "/static/js/2.37fd0b49.chunk.js"
+    "revision": "dab7d91a1529afa9a167",
+    "url": "/static/js/2.f481517f.chunk.js"
   },
   {
     "revision": "a90a0449d8ac6943f0cd62c0929c2a63",
-    "url": "/static/js/2.37fd0b49.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f481517f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b56fad3728c421efd11",
-    "url": "/static/js/main.a8049ee6.chunk.js"
+    "revision": "e45e24b67c5a0d39be20",
+    "url": "/static/js/main.8d1f279e.chunk.js"
   },
   {
     "revision": "13c5ce7c89dba05c4fba",
@@ -114,10 +114,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "10aee7a54765cc85bd2ecf1f0e389736",
     "url": "/static/media/toolingbasket.10aee7a5.jpg"
-  },
-  {
-    "revision": "9ab104c69bdc458dc8466e1ab5cea979",
-    "url": "/static/media/weldinghp.9ab104c6.jpg"
   },
   {
     "revision": "8c758cfcf2005c7dc0320e7cca9a6ba2",
